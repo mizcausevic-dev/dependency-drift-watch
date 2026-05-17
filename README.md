@@ -37,7 +37,7 @@ Platform teams usually have some combination of lockfiles, Dependabot, and patch
 ## Local run
 
 ```powershell
-Set-Location "C:\Users\chaus\dev\repos\dependency-drift-watch"
+cd dependency-drift-watch
 $env:Path = "$env:USERPROFILE\\.cargo\\bin;$env:Path"
 cargo run
 ```
@@ -61,7 +61,7 @@ cargo run
 ## Validation
 
 ```powershell
-Set-Location "C:\Users\chaus\dev\repos\dependency-drift-watch"
+cd dependency-drift-watch
 $env:Path = "$env:USERPROFILE\\.cargo\\bin;$env:Path"
 cargo test
 cargo build
@@ -96,4 +96,4 @@ flowchart LR
   G --> H
 ```
 
-More detail lives in [C:\Users\chaus\dev\repos\dependency-drift-watch\docs\architecture.md](/C:/Users/chaus/dev/repos/dependency-drift-watch/docs/architecture.md).
+More detail lives in [docs/architecture.md](./docs/architecture.md).
