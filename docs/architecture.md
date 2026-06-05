@@ -4,11 +4,11 @@ Dependency Drift Watch is a Rust + Axum service that models package freshness as
 
 ## Core flow
 
-1. Sample package snapshots, audit events, and policy configuration live in [C:\Users\chaus\dev\repos\dependency-drift-watch\src\data.rs](/C:/Users/chaus/dev/repos/dependency-drift-watch/src/data.rs).
-2. Route handlers in [C:\Users\chaus\dev\repos\dependency-drift-watch\src\main.rs](/C:/Users/chaus/dev/repos/dependency-drift-watch/src/main.rs) expose HTML proof surfaces, JSON APIs, and the Prometheus metrics endpoint.
-3. Assessment logic in [C:\Users\chaus\dev\repos\dependency-drift-watch\src\engine.rs](/C:/Users/chaus/dev/repos/dependency-drift-watch/src/engine.rs) converts release gap, stale lockfiles, CVE pressure, breaking changes, automation coverage, and service tier into ranked package drift.
-4. Render helpers in [C:\Users\chaus\dev\repos\dependency-drift-watch\src\render.rs](/C:/Users/chaus/dev/repos/dependency-drift-watch/src/render.rs) turn those assessments into operator-readable HTML surfaces.
-5. Shared API contracts are defined in [C:\Users\chaus\dev\repos\dependency-drift-watch\src\models.rs](/C:/Users/chaus/dev/repos/dependency-drift-watch/src/models.rs).
+1. Sample package snapshots, audit events, and policy configuration live in [src/data.rs](../src/data.rs).
+2. Route handlers in [src/main.rs](../src/main.rs) expose HTML proof surfaces, JSON APIs, and the Prometheus metrics endpoint.
+3. Assessment logic in [src/engine.rs](../src/engine.rs) converts release gap, stale lockfiles, CVE pressure, breaking changes, automation coverage, and service tier into ranked package drift.
+4. Render helpers in [src/render.rs](../src/render.rs) turn those assessments into operator-readable HTML surfaces.
+5. Shared API contracts are defined in [src/models.rs](../src/models.rs).
 
 ## Route surface
 
